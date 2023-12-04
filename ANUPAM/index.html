@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anupam Roy</title>
+    <!-- Add this in the <head> section of your HTML -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header class="p-3 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="./IMG/DLOGO.webp" style="width: 50px; height: 50px; border-radius: 50%;">
+                </a>
+             
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Trending Songs</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Go Pro </a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">My Music</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Podcast</a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+              </div>
+            </div>
+    </header>
+
+    <section class="mid">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./IMG/ANU.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Echoes of Melodic Brilliance</h1>
+                <p class="lead">Anupam Roy, a prominent Indian singer-songwriter, crafts soulful tunes that encapsulate raw emotions. With his poignant lyrics and evocative melodies, he redefines Bengal's music scene. His fusion of contemporary rhythms and traditional folk resonates deeply, making him a symbol of modern Bengali music, touching hearts across generations.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Play</button>
+                  <button type="button" class="btn btn-outline-secondary btn-lg px-4">Follow</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+   <div class="container1">
+    <div class="songList"> <h1>Best Of Anupam Roy</h1>
+    <div class="container2">
+      <div class="songItem">
+        <img src="./IMG/ANEKD.jpg" alt="ANEKD">
+        <span>Anek Durer Manush</span>
+        <span class="songlistplay">
+            <span class="timestamp">03:57
+                <i class="fa-solid fa-play" onclick="playSongOne()"></i>
+                <i class="fa-solid fa-pause" onclick="pauseSongOne()"></i>
+            </span>
+        </span>
+        <audio id="audioSongOne" src="./SONGS/Anek-Durer-Manush-Anupam-Roy.mp3"></audio>
+    </div>
+    
+    <div class="songItem">
+        <img src="./IMG/UMA.jpg" alt="UMA">
+        <span>Hariye Jawar Gaan</span>
+        <span class="songlistplay">
+            <span class="timestamp">05:41
+                <i class="fa-solid fa-play" onclick="playSongTwo()"></i>
+                <i class="fa-solid fa-pause" onclick="pauseSongTwo()"></i>
+            </span>
+        </span>
+        <audio id="audioSongTwo" src="./SONGS/Hariye-Jawar-Gaan-Anupam-Roy.mp3"></audio>
+    </div>
+    
+    <script>
+        function playSongOne() {
+            var audio = document.getElementById("audioSongOne");
+            audio.play();
+        }
+    
+        function pauseSongOne() {
+            var audio = document.getElementById("audioSongOne");
+            audio.pause();
+        }
+    
+        function playSongTwo() {
+            var audio = document.getElementById("audioSongTwo");
+            audio.play();
+        }
+    
+        function pauseSongTwo() {
+            var audio = document.getElementById("audioSongTwo");
+            audio.pause();
+        }
+    </script>
+    <div class="songItem">
+      <img src="./IMG/JAWLPHORING.jpg" alt="JAWLPHORING">
+      <span>Jawl Phoring</span>
+      <span class="songlistplay">
+          <span class="timestamp">04:52
+              <i class="fa-solid fa-play" onclick="playSongThree()"></i>
+              <i class="fa-solid fa-pause" onclick="pauseSongThree()"></i>
+          </span>
+      </span>
+      <audio id="audioSongThree" src="./SONGS/Jawl Phoring 2.0.mp3"></audio>
+  </div>
+  
+  <div class="songItem">
+      <img src="./IMG/BOBA.jpg" alt="BOBA">
+      <span>Boba Tunnel</span>
+      <span class="songlistplay">
+          <span class="timestamp">04:39
+              <i class="fa-solid fa-play" onclick="playSongFour()"></i>
+              <i class="fa-solid fa-pause" onclick="pauseSongFour()"></i>
+          </span>
+      </span>
+      <audio id="audioSongFour" src="./SONGS/AR BOBA TUNNEL.mp3"></audio>
+  </div>
+  
+  <script>
+      function playSongThree() {
+          var audio = document.getElementById("audioSongThree");
+          audio.play();
+      }
+  
+      function pauseSongThree() {
+          var audio = document.getElementById("audioSongThree");
+          audio.pause();
+      }
+  
+      function playSongFour() {
+          var audio = document.getElementById("audioSongFour");
+          audio.play();
+      }
+  
+      function pauseSongFour() {
+          var audio = document.getElementById("audioSongFour");
+          audio.pause();
+      }
+  </script>
+  
+  <div class="songItem">
+    <img src="./IMG/DOSHOMNEW.jpg" alt="DOSHOMNEW">
+    <span>Aami Shei Manushta Aar Nei</span>
+    <span class="songlistplay">
+        <span class="timestamp">04:50
+            <i class="fa-solid fa-play" onclick="playSongFive()"></i>
+            <i class="fa-solid fa-pause" onclick="pauseSongFive()"></i>
+        </span>
+    </span>
+    <audio id="audioSongFive" src="./SONGS/Agunkheko (Dawshom Awbotaar)-(Mr-Jat.in).mp3"></audio>
+</div>
+
+<div class="songItem">
+    <img src="./IMG/GHAWRBARI.jpg" alt="Img six">
+    <span>Ghawrbari</span>
+    <span class="songlistplay">
+        <span class="timestamp">03:55
+            <i class="fa-solid fa-play" onclick="playSongSix()"></i>
+            <i class="fa-solid fa-pause" onclick="pauseSongSix()"></i>
+        </span>
+    </span>
+    <audio id="audioSongSix" src="./SONGS/GHAWTBARI AR.mp3"></audio>
+</div>
+
+<script>
+    function playSongFive() {
+        var audio = document.getElementById("audioSongFive");
+        audio.play();
+    }
+
+    function pauseSongFive() {
+        var audio = document.getElementById("audioSongFive");
+        audio.pause();
+    }
+
+    function playSongSix() {
+        var audio = document.getElementById("audioSongSix");
+        audio.play();
+    }
+
+    function pauseSongSix() {
+        var audio = document.getElementById("audioSongSix");
+        audio.pause();
+    }
+</script>
+
+    
+            
+            
+    </div>
+    </div>
+   
+    
+    
+</div>
+
+
+
+
+
+
+<div class="buttom">
+    <input type="range" name="range" id="myProgressBar" min="0" max="100">
+    <div class="icons">
+        <!--5-->
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-forward"></i>
+        
+    </div>
+</div>
+
+
+<footer class="footer">
+D@9
+</footer>
+
+
+    
+</body>
+</html>

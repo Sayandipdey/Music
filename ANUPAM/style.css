@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Rubik+Bubbles&family=Ubuntu&display=swap');
+
+.mid{
+    margin-top: 0%;
+    background-color: #00b4d8;
+   
+    
+}
+body{
+    background-color:#00b4d8 ;
+}
+.container2{
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.container1{
+    height: 50vh;
+    background-color: #00b4d8;
+    display: flex;
+    width: 80%;
+    margin: 23px auto;
+    color: rgb(41, 27, 27);
+    font-family: Ubuntu,sans-serif;
+    margin-bottom: 60px;
+}
+.buttom{
+    position: sticky;
+    height:123px;
+    background-color: black;
+    color: rgb(0, 0, 0);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 80vw;
+    text-align: center;
+}
+.icons{
+    margin-top: 20px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    height: 50px;
+    display:flex;
+    background-color:#03045e ;
+    width: 600px;
+    color: #edede9;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+    border-color: bisque;
+}
+.timestamp{
+    margin: 0 23px;
+}
+/* arijit.css */
+
+/* Keyframes for the animation */
+@keyframes moveLeftToRight {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  /* Apply animation to the 'songItem' class */
+  .songItem {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Apply animation to the 'span' containing 'Jeetega Jeetega' */
+  .songItem span:nth-child(2) {
+    display: inline-block;
+    animation: moveLeftToRight 5s linear infinite; /* Change duration or animation properties as needed */
+  }
+  .footer {
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 50px; /* Center content vertically */
+}
